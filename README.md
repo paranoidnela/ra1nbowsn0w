@@ -4,6 +4,11 @@
 
 **Read [disclaimer](#disclaimer) before using this software.*
 
+## this fork
+
+* has partially working sig bypass for iphone X on 13.1.2 (using --bypass1312)
+
+* has untested support for 12.4 (using --bypass124)
 
 ## checkm8
 
