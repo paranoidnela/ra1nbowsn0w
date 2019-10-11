@@ -4,3 +4,5 @@ EnterDFU
 printenv
 rebot
 reboot
+help
+reboot

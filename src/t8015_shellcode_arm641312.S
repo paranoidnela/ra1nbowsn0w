@@ -7,7 +7,7 @@
 .set P2, 0x35000068
 .set A2, 0x18001EFF4
 .set P3, 0xD2800000
-.set A3, 0x18002FD10
+.set A3, 0x18002FD28
 .set P4, 0xD65F03C0
 .set A4, 0x18002fd5c
 .set P5, 0xD2800020
@@ -18,6 +18,8 @@
 .set A7, 0x18001F468
 .set P8, 0x370000a0
 .set A8, 0x18001F484
+.set P9, 0x6E777000
+.set A9, 0x18008E2E8
 
 .globl _main
 _main:
@@ -53,6 +55,10 @@ _main:
 
   LDR X5, =A8
   LDR W6, =P8
+  STR W6, [X5]
+
+  LDR X5, =A9
+  LDR W6, =P9
   STR W6, [X5]
 
   LDR X5, =JUMP_BACK
